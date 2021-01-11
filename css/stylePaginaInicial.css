@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(fundo_orange.jpg);
+}
+
+div{
+    border: 2px solid black;
+    margin: 2%;
+    background-color: white;
+}
+
+h1{
+    color: orange;
+    font-size: 50px;
+    margin: 2%;
+    text-align: center;
+}
+
+h2{
+    color: orange;
+    font-size: 30px;
+    margin: 2%;
+    text-decoration: underline;
+}
+
+p{
+    color: orange;
+    margin: 2%;;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#tutorial{
+    float: right;
+    margin: 2%;
+}
+
+footer{
+    clear: both;
+}
+
+#tuto{
+    background-color:white;
+    width: auto;
+    height: 620px;
+    align-items: center;
+}
+
+#teste{
+    background-color: white;
+}
+
+#video{
+    width: 750px;
+    height: 567px;
+    margin-top: -3%;
+    position: relative;
+}
+
+#imgMenu{
+    width: 926px;
+    height: 399px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.button {
+    margin-right: 1%;
+    position: relative;
+    background-color: #f07f29;
+    border-radius: 10px;
+    color: white;
+    padding: 30px 62px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#botaoConfig{
+    margin-right: 1%;
+    position: relative;
+    background-color: lightgray;
+    border-radius: 10px;
+    color: black;
+    padding: 30px 62px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#botaoConfig:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }

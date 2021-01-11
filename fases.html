@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Fases Iniciais</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Bruno Henrique, João Victor Voltarelli, Rodrigo Bellotti, João Pedro Buchivieser" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body onload="personalizarFases(); startGame();">
+
+    <div class="container">
+
+        <div class="game row" style="background-color:white">
+            
+
+            <div class="fase col-md-3" id="letra">
+                <p id="fase1"></p><br><br><br><br>
+                <p align="center" id="pontos1">Pontuação:</p><br><br>
+                <p align="center" id="pontuacao">0</p>
+            </div>
+
+            <div class="tabela col-md-6" id="tab">
+                <p id="jogofinalizado"></p>
+                <img width="500" height="500" id="imgTelaFinal" style="display: none">
+            </div>
+
+            <div class="col-md-3">
+
+                <button id="botaofase2" onclick="mudaFase()">Próxima Fase</button>
+                <button id="botaoTentaNovamente" onclick="reiniciaFase()">Tentar Novamente</button>
+
+                <br><br><br><br><br><br>         
+
+                <button id="botaoAvanca" onclick="iniciaJogo()" style="display: none; margin-left: 12px;">Próximo Desafio</button>
+                <button id="botaoReinicia" onclick="reiniciaJogo()" style="display: none; margin-left: 12px; margin-top: 10%;">Reiniciar Jogo</button>
+
+            </div>
+
+            <div class="col-md-6" id="divBotoesResposta">
+                <input type="button" onclick="verificaResposta(this.id)" class= "botaoResposta" id="botaoOpcao1"></button>
+                <input type="button" onclick="verificaResposta(this.id)" class= "botaoResposta" id="botaoOpcao2"></button>
+                <input type="button" onclick="verificaResposta(this.id)" class= "botaoResposta" id="botaoOpcao3"></button>
+                <input type="button" onclick="verificaResposta(this.id)" class= "botaoResposta" id="botaoOpcao4"></button>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script-menu.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

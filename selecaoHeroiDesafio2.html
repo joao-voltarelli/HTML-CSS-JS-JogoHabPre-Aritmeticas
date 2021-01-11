@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Escolha de Personagem</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Bruno Henrique, João Victor Voltarelli, Rodrigo Bellotti, João Pedro Buchivieser" />
+    <link rel="stylesheet" type="text/css" href="css/stylePaginaInicial.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body onload="personalizarSelecionaHeroi()">
+    <div id="teste">
+        <h1>Escolha seu herói preferido e começe sua aventura!</h1>
+    </div>
+
+    <div>
+        <table width="500" border="0" align="center" cellpadding="5">
+            <tr>
+                <td align="center" valign="center">
+                    <a href = "fasesFinais.html"><img src="imagens/batman.jpg"/ width="700" height="429" id="batman" onclick="passaCaminho(this.id); atualizaCaminho(this.id);"></a>
+                    <br />
+                    <h3>Batman</h3>
+                </td>
+
+                <td align="center" valign="center">
+                    <a href = "fasesFinais.html"><img src="imagens/mulherMaravilha.jpeg"/ width="700" height="429" id="mulherMaravilha" onclick="passaCaminho(this.id); atualizaCaminho(this.id);"></a>
+                    <br />
+                    <h3>Mulher-Maravilha</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" valign="center">
+                    <a href = "fasesFinais.html"><img src="imagens/homemAranha.webp"/ width="700" height="429" id="homemAranha" onclick="passaCaminho(this.id); atualizaCaminho(this.id);"></a>
+                    <br />
+                    <h3>Homem-Aranha</h3>
+                </td>
+
+                <td align="center" valign="center">
+                    <a href = "fasesFinais.html"><img src="imagens/superHomem.png"/ width="700" height="429" id="superHomem" onclick="passaCaminho(this.id); atualizaCaminho(this.id);"></a>
+                    <br />
+                    <h3>Super-Homem</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" valign="center">
+                    <a href = "fasesFinais.html"><img src="imagens/hulk.jpg"/ width="700" height="429" id="hulk" onclick="passaCaminho(this.id); atualizaCaminho(this.id);"></a>
+                    <br />
+                    <h3>Hulk</h3>
+                </td>
+
+                <td align="center" valign="center">
+                    <a href = "fasesFinais.html"><img src="imagens/viuvaNegra.jpg"/ width="700" height="429" id="viuvaNegra" onclick="passaCaminho(this.id); atualizaCaminho(this.id);"></a>
+                    <br />
+                    <h3>Viúva Negra</h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer></footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script-menu.js"></script>
+    <script type="text/javascript" src="js/script2.js"></script>
+
+</body>
+
+</html>

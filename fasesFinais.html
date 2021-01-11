@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Fases Finais</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Bruno Henrique, João Victor Voltarelli, Rodrigo Bellotti, João Pedro Buchivieser" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body onload="personalizarFasesFinais(); iniciaFases(1);">
+
+    <div class="container">
+
+        <div class="game row" style="background-color:white">
+            
+
+            <div class="fase col-md-3" id="letra">
+                <p id="fase1"></p><br><br><br><br>
+                <p align="center" id="pontos1">Pontuação:</p><br><br>
+                <p align="center" id="pontuacao">0</p>
+            </div>
+
+            <div align="center" class="tabela col-md-6" id="tab" style="background-color: white;">
+                <p id="jogofinalizado"></p>
+                <img width="500" height="500" id="imgTelaFinal" style="display: none">
+                <img id="imgFase" ondrop="drop_handler(event);" ondragover="dragover_handler(event)" width="230" height="188" id="imgFigura" style="display: block; margin-top: 10%;">
+            </div>
+
+            <div class="col-md-3">
+
+                <button id="botaofase2" onclick="mudaFase()">Próxima Fase</button>
+                <button id="botaoTentaNovamente" onclick="reiniciaFase()">Tentar Novamente</button>
+
+                <br><br><br><br><br><br>         
+
+                <button id="botaoAvanca" onclick="iniciaJogo()" style="display: none; margin-left: 12px;">Próximo Desafio</button>
+                <button id="botaoReinicia" onclick="reiniciaJogo()" style="display: none; margin-left: 12px; margin-top: 10%;">Reiniciar Jogo</button>
+
+            </div>
+
+            <div class="box" style="margin: 1%; margin-top: 10%; margin-left: 2%;">
+                <img id="1" draggable="true" ondragstart="dragstart_handler(event, this)" width="230" height="188" id="imgFigura" style="display: block; cursor: pointer;">
+            </div>
+            <div class="box" style="margin: 1%; margin-top: 10%;">
+                <img id="2" draggable="true" ondragstart="dragstart_handler(event, this)" width="230" height="188" id="imgFigura" style="display: block; cursor: pointer;">
+            </div>
+            <div class="box" style="margin: 1%; margin-top: 10%;">
+                <img id="3" draggable="true" ondragstart="dragstart_handler(event, this)" width="230" height="188" id="imgFigura" style="display: block; cursor: pointer;">
+            </div>
+            <div class="box" style="margin: 1%; margin-top: 10%;">
+                <img id="4" draggable="true" ondragstart="dragstart_handler(event, this)" width="230" height="188" id="imgFigura" style="display: block; cursor: pointer;">
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="js/script2.js"></script>
+    <script type="text/javascript" src="js/script-menu.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
